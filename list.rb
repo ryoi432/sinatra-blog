@@ -5,7 +5,7 @@ class ListRoute < Sinatra::Base
     @article_list = []
     list = []
     Dir.foreach('./data'){|file|
-      next if file =~ /^\.+$/
+      next if file =~ /^\..*$/
       list.push(file)
     }
     list.sort!{|a, b| b <=> a}
