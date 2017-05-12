@@ -1,0 +1,6 @@
+<h1><%=@title%></h1>
+<p><%=@date%></p>
+<p>
+<%=@body.gsub(/\n/, "<br>")%>
+</p>
+<p><a href="../edit/<%=@article_id%>">編集</a></p>
